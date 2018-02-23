@@ -15,4 +15,5 @@ class Cafe < Sinatra::Base
   set :root, File.dirname(__FILE__)
   enable :sessions
   register Sinatra::ActiveRecordExtension
+  use Rack::MethodOverride
 end 
